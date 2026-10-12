@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "C4", "UP", "ASYNC"]
+ignore = [
+    "E501",     # Line too long
+    "ASYNC230", # Blocking open call in async function
+    "ASYNC240", # Blocking os.path operations
+    "UP006",    # non-pep585-annotation
+    "UP045",    # non-pep604-annotation-optional
+    "B008",     # Do not perform function call in argument defaults
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]

@@ -1,0 +1,10 @@
+motor
+dnspython
+python-telegram-bot
+python-dotenv
+apscheduler
+curl_cffi
+requests
+playwright
+aiohttp
+deep-translator
